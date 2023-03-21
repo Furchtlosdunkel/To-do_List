@@ -7,7 +7,6 @@
 body {
     display: flex;
     justify-content: center;
-
 }
 
 .todo-list {
@@ -17,10 +16,12 @@ body {
     background-color: rgb(214, 214, 214);
     width: 35%;
     height: 30rem;
-    margin: 1.9rem;
+    padding: 0;
+    margin: 1rem;
+    width: 50%;
 }
 
-.task-form {
+.task-header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,18 +37,17 @@ body {
     margin-bottom: 1.9rem;
 }
 
-.task-from {
+.task-form {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    
 }
 
 .task-text {
-    width: 20vw;
+    padding: 6px 10px;
+    width: 30vw;
     height: 1.4rem;
     border-radius: 7px 0 0 7px;
     border: none;
+    font-size: 0.7rem;
 }
 
 .task-btn {
@@ -65,11 +65,11 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 0.5rem 1rem;
-
+    padding: 0 3rem;
 }
 
 .tasks {
+    margin-bottom: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -80,15 +80,14 @@ body {
     font-size: 1rem;
     display: flex;
     align-items: center;
-
 }
-.task-list-ckb{
+
+.task-list-ckb {
     margin-right: 0.5rem;
 }
 
 .task-right {
     display: flex;
-
 }
 
 .btn-delete {
@@ -97,15 +96,21 @@ body {
     border-radius: 6px;
     border: none;
 }
-.btn-delete:hover{
+
+.btn-delete:hover {
     background-color: rgb(247, 167, 167);
 }
 
-.btn-edit{
+.btn-x {
+    display: none;
+}
+
+.btn-edit {
     padding: 4px;
     border-radius: 6px;
     border: none;
 }
-.btn-edit:hover{
+
+.btn-edit:hover {
     background-color: rgb(247, 167, 167);
 }

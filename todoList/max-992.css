@@ -1,0 +1,24 @@
+@media screen and (max-width: 992px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+     .todo-list {
+        padding: 0;
+        margin: 1rem;
+        width: 50%;
+    }
+
+    .task-title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .task-text {
+        font-size: 0.7rem;
+        width: 30vw;
+        height: 1.4rem;
+    }
+}
