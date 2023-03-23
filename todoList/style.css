@@ -82,9 +82,16 @@ body {
     align-items: center;
 }
 
+
 .task-list-ckb {
     margin-right: 0.5rem;
+    
 }
+.task-list-ckb:checked~span{
+    text-decoration: line-through;
+    color: gray;
+}
+
 
 .task-right {
     display: flex;
