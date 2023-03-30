@@ -1,58 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="max-768.css">
-    <link rel="stylesheet" href="max-992.css">
-    <title>Todo-List</title>
-
+  <meta charset="UTF-8">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-    <div class="todo-list">
-        <div class="task-header">
-            <h1 class="task-title">Todo List</h1>
-            <form class="task-form">
-                <input type="text" class="task-text" placeholder="  Text here...">
-                <button type="add" class="task-btn">+</button>
-            </form>
-        </div>
-
-        <div class="task-list">
-            <div class="tasks">
-                <div class="task-left">
-                    <input type="checkbox" name="checkbox" class="task-list-ckb">
-                    <span>Markete Git </span>
-                </div>
-
-                <div class="task-right">
-                    <button class="btn-delete">del</button>
-                    <button class="btn-x">X</button>
-                    <button class="btn-edit">edit</button>
-                </div>
-            </div>
-
-            <div class="tasks">
-                <div class="task-left">
-                    <input type="checkbox" name="checkbox" class="task-list-ckb">
-                    <span>Markete Git </span>
-                </div>
-                <div class="task-right">
-                    <button class="btn-delete">del</button>
-                    <button class="btn-x">X</button>
-                    <button class="btn-edit">edit</button>
-                    
-                </div>
-            </div>
-        </div>
+  <div class="container">
+    <div class="header">
+      <h1>To-Do List</h1>
+      <div class="form">
+        <input type="text" id="taskInput" class="taskInput" placeholder="Add New Task">
+        <button id="addTaskBtn" class="addTaskBtn">+</button>
+      </div>
     </div>
+    <ul id="taskList">
+      <li>sahbdjkshako</li>
+    </ul>
 
-    <script src="app.js"></script>
+  </div>
+  <script src="app.js"></script>
 </body>
 
 </html>
