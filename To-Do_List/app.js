@@ -28,16 +28,17 @@ addTaskBtn.addEventListener("click", function () {
       <button class="editBtn">Edit</button>
     </div>
   `;
-  //checkbox
+
+
   const checkbox = taskItem.querySelector('.chkbox');
   const span = taskItem.querySelector('.task');
-  
-  checkbox.addEventListener('change', function() {
+
+  checkbox.addEventListener('change', function () {
     if (this.checked) {
       this.parentNode.parentNode.remove();
-    } 
+    }
   });
-  
+
   taskList.appendChild(taskItem);
   taskInput.value = "";
 
