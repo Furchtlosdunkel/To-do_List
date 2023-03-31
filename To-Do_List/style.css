@@ -1,22 +1,24 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f2f2f2;
+  padding: 2rem;
 }
 
 .container {
   max-width: 40%;
   margin: 0 auto;
-  background-color: #fff;
+  background-color: rgb(190, 219, 244);
   padding: 1.2rem;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .header {
-  background-color: yellow;
+  background-color: rgb(209, 241, 197);
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 1.5rem;
 }
 .taskTitle{
   font-size: 3rem;
@@ -33,6 +35,7 @@ body {
   font-size: 0.9rem;
   padding: 0.2rem 0.7rem;
   border: none;
+  outline: none;
   border-radius: 0.5rem 0 0 0.5rem;
   width: 60%;
 }
