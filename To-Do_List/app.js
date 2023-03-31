@@ -86,30 +86,3 @@ taskList.addEventListener("click", function (event) {
     localStorage.setItem("tasks", taskList.innerHTML);
   }
 });
-
-// // Toggle the "checked" class on the list item when it is clicked
-// checkList.addEventListener('click', function (x) {
-//   if (x.target.tagName === 'LI') {
-//     x.target.classList.toggle('checked');
-//   }
-// }, false);
-
-
-
-
-
-
-{/* <body>
-    <div id="tamamlandi-popup" class="popup">
-        <p>Görev tamamlandı!</p>
-        <button onclick="chkTask()">Kapat</button>
-    </div>
-
-
-</body>
-<script>
-
-function chkTask() {
-  var popup = document.getElementById("tamamlandi-popup");
-  popup.style.display = "none";
-} */}
