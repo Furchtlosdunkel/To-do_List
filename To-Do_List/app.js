@@ -28,17 +28,6 @@ addTaskBtn.addEventListener("click", function () {
       <button class="editBtn">Edit</button>
     </div>
   `;
-
-
-  const checkbox = taskItem.querySelector('.chkbox');
-  const span = taskItem.querySelector('.task');
-
-  checkbox.addEventListener('change', function () {
-    if (this.checked) {
-      this.parentNode.parentNode.remove();
-    }
-  });
-
   taskList.appendChild(taskItem);
   taskInput.value = "";
 
@@ -46,16 +35,26 @@ addTaskBtn.addEventListener("click", function () {
   localStorage.setItem("tasks", taskList.innerHTML);
 });
 
-// Handle delete and edit button clicks
+
+// Handle checkbox clicks
 taskList.addEventListener("click", function (event) {
-  if (event.target.classList.contains("deleteBtn")) {
+  if (event.target.classList.contains("chkbox")) {
+    const listItem = event.target.parentElement.parentElement;
+    if (event.target.checked) {
+      listItem.remove();
+      // Update the saved task list in local storage
+      localStorage.setItem("tasks", taskList.innerHTML);
+    }
+  }
+  
+  // Handle delete and edit button clicks
+  else if (event.target.classList.contains("deleteBtn")) {
     event.target.parentElement.parentElement.remove();
 
     // Update the saved task list in local storage
     localStorage.setItem("tasks", taskList.innerHTML);
 
-  }
-  else if (event.target.classList.contains("editBtn")) {
+  } else if (event.target.classList.contains("editBtn")) {
     // Replace the task text with an input field for editing
     const li = event.target.closest("li");
     const span = li.querySelector("#span");
@@ -68,8 +67,7 @@ taskList.addEventListener("click", function (event) {
     event.target.innerText = "Save";
     event.target.classList.remove("editBtn");
     event.target.classList.add("saveBtn");
-  }
-  else if (event.target.classList.contains("saveBtn")) {
+  } else if (event.target.classList.contains("saveBtn")) {
     // Replace the input field with the edited task text
     const li = event.target.closest("li");
     const input = li.querySelector("input[type='text']");
