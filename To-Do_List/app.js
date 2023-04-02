@@ -24,7 +24,7 @@ addTaskBtn.addEventListener("click", function () {
       <span id="span" class="task">${taskText}</span>
     </div>
     <div>
-      <button class="deleteBtn">Delete</button>
+      <button class="deleteBtn" >Delete</button>
       <button class="editBtn">Edit</button>
     </div>
   `;
